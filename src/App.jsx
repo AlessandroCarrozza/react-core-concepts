@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       {/* <Header></Header> */}
-      {/* oppure come self closed tag*/}
+      {/* oppure come self closing tag*/}
       <Header />
       <main>
         <h2>Time to get started!</h2>
