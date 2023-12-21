@@ -5,6 +5,9 @@ import { CORE_CONCEPTS } from "./data.js";
 
 // componente principale
 function App() {
+  function handleClick(selectedButton) {
+    console.log(selectedButton);
+  }
   return (
     <div>
       {/* <Header></Header> */}
@@ -33,10 +36,12 @@ function App() {
           {/* menu tag never used */}
           <menu>
             {/* no self closing */}
-            <TabButton>Components</TabButton>
-            <TabButton></TabButton>
-            <TabButton></TabButton>
-            <TabButton></TabButton>
+            <TabButton onClick={() => handleClick("Components")}>
+              Components
+            </TabButton>
+            <TabButton onClick={() => handleClick("JSX")}>JSX</TabButton>
+            <TabButton onClick={() => handleClick("Props")}>Props</TabButton>
+            <TabButton onClick={() => handleClick("State")}>State</TabButton>
           </menu>
         </section>
       </main>
