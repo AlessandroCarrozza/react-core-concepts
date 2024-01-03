@@ -7,11 +7,11 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-// randomic word from reactDescription array
-const description = reactDescription[genRandomInt(reactDescription.length - 1)];
-
 // creation new component
 function Header() {
+  // randomic word from reactDescription array
+  const description =
+    reactDescription[genRandomInt(reactDescription.length - 1)];
   return (
     // the () of return if more of 1 line markup
     <header>
