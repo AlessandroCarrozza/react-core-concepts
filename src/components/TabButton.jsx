@@ -1,8 +1,8 @@
-const TabButton = ({ children, onClick, isSelected }) => {
+const TabButton = ({ children, isSelected, ...props }) => {
   // isSelectd is a boolean
   return (
     <li>
-      <button className={isSelected ? "active" : undefined} onClick={onClick}>
+      <button className={isSelected ? "active" : undefined} {...props}>
         {children}
       </button>
     </li>

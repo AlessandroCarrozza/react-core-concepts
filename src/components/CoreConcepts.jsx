@@ -4,7 +4,11 @@ import Section from "./Section";
 
 function CoreConcepts() {
   return (
-    <Section id="core-concepts" title="Core Concepts">
+    <Section
+      id="core-concepts"
+      className="section-wrapper"
+      title="Core Concepts"
+    >
       <ul>
         {CORE_CONCEPTS.map((conceptItem) => (
           <CoreConcept {...conceptItem} key={conceptItem.title} />

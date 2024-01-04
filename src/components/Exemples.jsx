@@ -27,7 +27,7 @@ function Examples() {
   //   );
   // }
   return (
-    <Section id="examples" title="Examples">
+    <Section id="examples" className="section-wrapper" title="Examples">
       {/* menu tag never used */}
       <menu>
         {/* no self closing */}
